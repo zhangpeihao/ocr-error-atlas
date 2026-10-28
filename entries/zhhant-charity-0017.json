@@ -1,0 +1,18 @@
+{
+ "id": "zhhant-charity-0017",
+ "lang": "zh-Hant",
+ "domain": "hkicharity",
+ "wrong": "計人",
+ "right": "計入",
+ "contexts": [
+  "計入法定人數內"
+ ],
+ "severity": "high",
+ "occurrences": 2,
+ "evidence": "國際中醫針灸解剖學會 p8 两处「…的情況下，計入法定人數內」。原图作「入」。注意「會計人員」中的「計人」是正确搭配（廣西校友會章程即有此例），故(pattern)須加前置否定：排除「會計人」。",
+ "case_doc": "國際中醫針灸解剖學會有限公司 章程",
+ "case_page": "p8",
+ "reported_at": "2026-10-28",
+ "reporter": "macm",
+ "confirmed_by": "600dpi 裁切；同文档「會計人員」作反例对照"
+}

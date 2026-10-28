@@ -1,0 +1,19 @@
+{
+ "id": "zhhant-charity-0015",
+ "lang": "zh-Hant",
+ "domain": "hkicharity",
+ "wrong": "價項",
+ "right": "債項",
+ "contexts": [
+  "本公司就其債項或義務",
+  "承擔該債項或義務"
+ ],
+ "severity": "high",
+ "occurrences": 2,
+ "evidence": "香港本草醫藥學會 p10「本公司就其價項或義務」、香港華夏醫藥學會慈善基金 p15「為本公司的價權證的持有人」：600dpi 原图分别作「債項」「債權證」（右半「責」）。「價」与「債」同為亻旁、右半「賈/責」形近，是「償→債」之外的第二个变体，两条都要盯。",
+ "case_doc": "香港本草醫藥學會有限公司 章程；香港華夏醫藥學會慈善基金有限公司 章程",
+ "case_page": "p10；p15",
+ "reported_at": "2026-10-28",
+ "reporter": "macm",
+ "confirmed_by": "600dpi 单字裁切，右半偏旁比对"
+}

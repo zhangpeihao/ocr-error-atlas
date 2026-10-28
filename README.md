@@ -42,6 +42,8 @@ scripts/build_atlas.py  汇总 + 校验
 
 **entries** — 具体案例，回答"这个字在哪份文件被错成了什么、依据是什么"。前者是索引，后者是证据。
 
+**方法** — 见 [METHOD.md](METHOD.md)：怎么判字形、什么时候不能信引擎票数、哪些简体字不能动、等长替换原则。案例库解决"盯哪里"，方法备忘解决"凭什么是这个字"。
+
 ## 贡献
 
 欢迎提 PR。规范见 [CONTRIBUTING.md](CONTRIBUTING.md)。
@@ -56,10 +58,11 @@ scripts/build_atlas.py  汇总 + 校验
 
 | 项 | 数量 |
 |---|---|
-| 形近字对 | 见 `riskpairs.json` |
-| 案例 | 见 `entries/` 文件数 |
+| 形近字对 | 32 对（高危 13 / 低危 19），见 `riskpairs.json` |
+| 案例 | 20 条，覆盖 8 类字对；单一最大样本为 23 份香港中醫公會章程（510 页 / 10.2 万汉字） |
 | 语种 | 繁體中文（香港法律/公司文书）为主 |
 | 主引擎 | unlimited-ocr v2；交叉验证 MinerU、Tesseract chi_tra |
+| 方法论 | [METHOD.md](METHOD.md)（三引擎同错实证、字形相似度为何不可用、等长替换、简体白名单） |
 
 ## 免责
 

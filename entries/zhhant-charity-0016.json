@@ -1,0 +1,18 @@
+{
+ "id": "zhhant-charity-0016",
+ "lang": "zh-Hant",
+ "domain": "hkicharity",
+ "wrong": "潰盤",
+ "right": "清盤",
+ "contexts": [
+  "支付清盤的費用、收費和開支"
+ ],
+ "severity": "high",
+ "occurrences": 1,
+ "evidence": "香港本草醫藥學會 p2「在其不再是本公司的成員之前招致的債項及債務，支付潰盤的費用」。原图作「清盤」；MinerU 独立读作「清盤」。「清盤」(winding-up) 是法定程序名称，与「潰」无任何语义关联，属纯字形误识（氵＋青 vs 氵＋貴）。",
+ "case_doc": "香港本草醫藥學會有限公司 章程",
+ "case_page": "p2",
+ "reported_at": "2026-10-28",
+ "reporter": "macm",
+ "confirmed_by": "原图裁切 + MinerU 同判 + 语义排他（潰盤不成词）"
+}

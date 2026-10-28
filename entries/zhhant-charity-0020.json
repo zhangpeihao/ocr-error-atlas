@@ -1,0 +1,21 @@
+{
+ "id": "zhhant-charity-0020",
+ "lang": "zh-Hant",
+ "domain": "hkicharity",
+ "wrong": "内",
+ "right": "內",
+ "contexts": [
+  "任期内",
+  "主要内容",
+  "代表通知書的内容",
+  "七日內"
+ ],
+ "severity": "low",
+ "occurrences": 7,
+ "evidence": "6 份章程共 7 处输出「内」（人字头内为「人」）。繁体正字作「內」（内为「入」）。异体差异极小、不影响语义，但会使全文用字不统一，建议统一为「內」。",
+ "case_doc": "九龍中醫師公會、香港本草醫藥學會、新華中醫中藥促進會、香港廣西社團總會、香港中藥藥劑師協會",
+ "case_page": "多处",
+ "reported_at": "2026-10-28",
+ "reporter": "macm",
+ "confirmed_by": "以 opencc s2t 全量扫描 + 逐字上下文人工确认"
+}

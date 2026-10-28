@@ -1,0 +1,18 @@
+{
+ "id": "zhhant-charity-0019",
+ "lang": "zh-Hant",
+ "domain": "hkicharity",
+ "wrong": "黄",
+ "right": "黃",
+ "contexts": [
+  "黄洪生／黄流生／黄月波／黄傑／黄輝波"
+ ],
+ "severity": "low",
+ "occurrences": 12,
+ "evidence": "5 份章程的签署人表与董事名册中共 12 处输出简体「黄」。同一单元格内常与「黃」并存（香港中醫骨傷學會「黄傑WONG KIT (黃傑)」），可确认为引擎字形混入而非原文用字。属简体混入类，可全局替换。",
+ "case_doc": "香港中醫師公會、九龍中醫師公會、港九中華藥業商會、香港中醫骨傷學會、香港針灸醫師學會",
+ "case_page": "签署人页／董事名册页",
+ "reported_at": "2026-10-28",
+ "reporter": "macm",
+ "confirmed_by": "同单元格内「黄」「黃」并存，属引擎输出不一致"
+}
