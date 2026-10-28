@@ -1,0 +1,327 @@
+{
+ "schema": 1,
+ "version": "2026.10.28.9",
+ "updated": "2026-10-28T09:56:54+08:00",
+ "note": "由 scripts/build_atlas.py 从 riskpairs.json + entries/ 生成，请勿手改",
+ "riskpairs": [
+  {
+   "a": "債",
+   "b": "償",
+   "high": true,
+   "note": "債項/債權證 vs 償付/清償/賠償 —— 实测主引擎系统性把「債」输出成「償」"
+  },
+  {
+   "a": "逾",
+   "b": "過",
+   "high": true,
+   "note": "超逾 vs 超過 —— 香港章程惯用「超逾」；同文档内两种都存在，禁全局替换"
+  },
+  {
+   "a": "入",
+   "b": "人",
+   "high": true,
+   "note": "入會/計入 vs 人材/任何人 —— 实测会两引擎同错，只能靠原图"
+  },
+  {
+   "a": "記",
+   "b": "託",
+   "high": true,
+   "note": "押記(charge) vs 委託 —— 错则改变法律性质"
+  },
+  {
+   "a": "肯",
+   "b": "苟",
+   "high": true,
+   "note": "中肯 vs 中苟 —— 核数报告用语"
+  },
+  {
+   "a": "連",
+   "b": "運",
+   "high": true,
+   "note": "關連(connected) vs 關運 —— 关连交易判定基准"
+  },
+  {
+   "a": "註",
+   "b": "注",
+   "high": true,
+   "note": "註冊 vs 注意 —— 简体混入高发"
+  },
+  {
+   "a": "冊",
+   "b": "册",
+   "high": true,
+   "note": "註冊處 vs 简体「册」"
+  },
+  {
+   "a": "捐",
+   "b": "損",
+   "high": true,
+   "note": "捐贈 vs 損害"
+  },
+  {
+   "a": "予",
+   "b": "子",
+   "high": true,
+   "note": "授予 vs 子"
+  },
+  {
+   "a": "末",
+   "b": "未",
+   "high": true,
+   "note": "末日 vs 未滿"
+  },
+  {
+   "a": "己",
+   "b": "已",
+   "high": true,
+   "note": "自己 vs 已經"
+  },
+  {
+   "a": "藉",
+   "b": "籍",
+   "high": true,
+   "note": "藉以 vs 籍貫"
+  },
+  {
+   "a": "日",
+   "b": "曰",
+   "high": false
+  },
+  {
+   "a": "土",
+   "b": "士",
+   "high": false
+  },
+  {
+   "a": "干",
+   "b": "千",
+   "high": false
+  },
+  {
+   "a": "戌",
+   "b": "戍",
+   "high": false
+  },
+  {
+   "a": "巳",
+   "b": "已",
+   "high": false
+  },
+  {
+   "a": "刺",
+   "b": "剌",
+   "high": false
+  },
+  {
+   "a": "具",
+   "b": "俱",
+   "high": false
+  },
+  {
+   "a": "幼",
+   "b": "幻",
+   "high": false
+  },
+  {
+   "a": "折",
+   "b": "拆",
+   "high": false
+  },
+  {
+   "a": "亨",
+   "b": "享",
+   "high": false
+  },
+  {
+   "a": "侯",
+   "b": "候",
+   "high": false
+  },
+  {
+   "a": "微",
+   "b": "徽",
+   "high": false
+  },
+  {
+   "a": "查",
+   "b": "杳",
+   "high": false
+  },
+  {
+   "a": "決",
+   "b": "决",
+   "high": false,
+   "note": "异体字，多为远端引擎输出简体异体，通常不算错"
+  },
+  {
+   "a": "內",
+   "b": "内",
+   "high": false,
+   "note": "异体字"
+  }
+ ],
+ "entries": [
+  {
+   "id": "zhhant-charity-0001",
+   "lang": "zh-Hant",
+   "domain": "hkicharity",
+   "wrong": "人",
+   "right": "入",
+   "contexts": [
+    "入會贊助",
+    "計入法定人數",
+    "加入"
+   ],
+   "severity": "high",
+   "occurrences": 2,
+   "evidence": "原图 p4 1.9 作「入會贊助」；p13 作「計入法定人數」。字形判据：捺尾向右下为「人」，收笔向左下为「入」。注意此组会出现两引擎同错。",
+   "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+   "case_page": "4, 13",
+   "reported_at": "2026-10-27",
+   "reporter": "macm",
+   "confirmed_by": "原图 8-12x 放大 + 同页 1.6「中醫人材」对照"
+  },
+  {
+   "id": "zhhant-charity-0002",
+   "lang": "zh-Hant",
+   "domain": "hkicharity",
+   "wrong": "注",
+   "right": "註",
+   "contexts": [
+    "公司註冊證明書",
+    "公司註冊處"
+   ],
+   "severity": "medium",
+   "occurrences": 1,
+   "evidence": "原图封面作「公司註冊證明書」，同页上一行为「公司註冊處」。属简体字形混入，非形近。",
+   "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+   "case_page": "1",
+   "reported_at": "2026-10-27",
+   "reporter": "macm"
+  },
+  {
+   "id": "zhhant-charity-0003",
+   "lang": "zh-Hant",
+   "domain": "hkicharity",
+   "wrong": "册",
+   "right": "冊",
+   "contexts": [
+    "註冊",
+    "註冊處"
+   ],
+   "severity": "medium",
+   "occurrences": 1,
+   "evidence": "同上。简体「册」不贯穿竖笔，「冊」贯穿。",
+   "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+   "case_page": "1",
+   "reported_at": "2026-10-27",
+   "reporter": "macm"
+  },
+  {
+   "id": "zhhant-charity-0004",
+   "lang": "zh-Hant",
+   "domain": "hkicharity",
+   "wrong": "託",
+   "right": "記",
+   "contexts": [
+    "押記"
+   ],
+   "severity": "high",
+   "occurrences": 1,
+   "evidence": "原图 p5 1.18「可押記本公司現有或未來的財產」。押記(charge)为香港法定担保用语，误作「押託」改变法律性质。",
+   "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+   "case_page": "5",
+   "reported_at": "2026-10-27",
+   "reporter": "macm"
+  },
+  {
+   "id": "zhhant-charity-0005",
+   "lang": "zh-Hant",
+   "domain": "hkicharity",
+   "wrong": "苟",
+   "right": "肯",
+   "contexts": [
+    "中肯地反映"
+   ],
+   "severity": "high",
+   "occurrences": 1,
+   "evidence": "原图 p6「真實而中肯地反映狀況」。核数报告标准用语。",
+   "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+   "case_page": "6",
+   "reported_at": "2026-10-27",
+   "reporter": "macm"
+  },
+  {
+   "id": "zhhant-charity-0006",
+   "lang": "zh-Hant",
+   "domain": "hkicharity",
+   "wrong": "過",
+   "right": "逾",
+   "contexts": [
+    "不超逾",
+    "超逾百分之一"
+   ],
+   "severity": "medium",
+   "occurrences": 3,
+   "evidence": "原图 p6 三处均作「超逾」。同文档另有「超過6個月」等 2 处确实为「超過」，不可全局替换，须按位置判。",
+   "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+   "case_page": "6",
+   "reported_at": "2026-10-27",
+   "reporter": "macm"
+  },
+  {
+   "id": "zhhant-charity-0007",
+   "lang": "zh-Hant",
+   "domain": "hkicharity",
+   "wrong": "償",
+   "right": "債",
+   "contexts": [
+    "債項",
+    "債項或義務",
+    "債權證",
+    "債權人"
+   ],
+   "severity": "high",
+   "occurrences": 4,
+   "evidence": "原图 p6/p13 三处「債項」、p15 一处「債權證」。注意同一文档中「償付/清償/彌償/賠償」的「償」均为正确用法，禁止全局替换。",
+   "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+   "case_page": "6, 13, 15",
+   "reported_at": "2026-10-27",
+   "reporter": "macm"
+  },
+  {
+   "id": "zhhant-charity-0008",
+   "lang": "zh-Hant",
+   "domain": "hkicharity",
+   "wrong": "價",
+   "right": "債",
+   "contexts": [
+    "債權證"
+   ],
+   "severity": "high",
+   "occurrences": 1,
+   "evidence": "原图 p15「為本公司的債權證的持有人分開舉行的會議」。debenture 债权证。",
+   "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+   "case_page": "15",
+   "reported_at": "2026-10-27",
+   "reporter": "macm"
+  },
+  {
+   "id": "zhhant-charity-0009",
+   "lang": "zh-Hant",
+   "domain": "hkicharity",
+   "wrong": "運",
+   "right": "連",
+   "contexts": [
+    "有關連的情況"
+   ],
+   "severity": "high",
+   "occurrences": 1,
+   "evidence": "原图 p23「與…有關連的情況下」。董事免责条款；關連(connected)为关连交易判定基准。",
+   "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+   "case_page": "23",
+   "reported_at": "2026-10-27",
+   "reporter": "macm"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "zhhant-charity-0005",
+ "lang": "zh-Hant",
+ "domain": "hkicharity",
+ "wrong": "苟",
+ "right": "肯",
+ "contexts": [
+  "中肯地反映"
+ ],
+ "severity": "high",
+ "occurrences": 1,
+ "evidence": "原图 p6「真實而中肯地反映狀況」。核数报告标准用语。",
+ "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+ "case_page": "6",
+ "reported_at": "2026-10-27",
+ "reporter": "macm"
+}

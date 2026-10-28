@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OCR 勘错经验库",
+  "type": "object",
+  "required": ["schema", "version", "riskpairs", "entries"],
+  "additionalProperties": true,
+  "properties": {
+    "schema": {"const": 1, "description": "协议版本，客户端只接受已知版本"},
+    "version": {"type": "string", "description": "内容版本，建议日期式 2026.10.28.1"},
+    "updated": {"type": "string", "format": "date-time"},
+    "maintainer": {"type": "string"},
+    "note": {"type": "string"},
+    "riskpairs": {
+      "type": "array",
+      "description": "形近字对；high=true 表示出现即强制人工核对",
+      "items": {
+        "type": "object",
+        "required": ["a", "b"],
+        "properties": {
+          "a": {"type": "string", "minLength": 1, "maxLength": 1},
+          "b": {"type": "string", "minLength": 1, "maxLength": 1},
+          "high": {"type": "boolean", "default": false},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "description": "已确认的误判案例（wrong 为引擎输出，right 为原件正确字）",
+      "items": {
+        "type": "object",
+        "required": ["id", "wrong", "right", "severity", "evidence"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{4,63}$"},
+          "lang": {"type": "string", "examples": ["zh-Hant", "zh-Hans", "en"]},
+          "domain": {"type": "string", "examples": ["hkicharity", "legal", "finance"]},
+          "wrong": {"type": "string", "description": "OCR 输出的错误字/词"},
+          "right": {"type": "string", "description": "原件正确字/词"},
+          "contexts": {"type": "array", "items": {"type": "string"}},
+          "severity": {"enum": ["high", "medium", "low"]},
+          "occurrences": {"type": "integer", "minimum": 1},
+          "evidence": {"type": "string", "minLength": 10, "description": "原图依据，须可复核"},
+          "case_doc": {"type": "string"},
+          "case_page": {"type": "string"},
+          "reported_at": {"type": "string"},
+          "reporter": {"type": "string"},
+          "confirmed_by": {"type": "string", "description": "裁决方法，如 8-12x 放大 + 同页对照"}
+        }
+      }
+    }
+  }
+}

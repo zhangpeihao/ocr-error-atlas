@@ -1,0 +1,20 @@
+{
+ "id": "zhhant-charity-0001",
+ "lang": "zh-Hant",
+ "domain": "hkicharity",
+ "wrong": "人",
+ "right": "入",
+ "contexts": [
+  "入會贊助",
+  "計入法定人數",
+  "加入"
+ ],
+ "severity": "high",
+ "occurrences": 2,
+ "evidence": "原图 p4 1.9 作「入會贊助」；p13 作「計入法定人數」。字形判据：捺尾向右下为「人」，收笔向左下为「入」。注意此组会出现两引擎同错。",
+ "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+ "case_page": "4, 13",
+ "reported_at": "2026-10-27",
+ "reporter": "macm",
+ "confirmed_by": "原图 8-12x 放大 + 同页 1.6「中醫人材」对照"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "zhhant-charity-0003",
+ "lang": "zh-Hant",
+ "domain": "hkicharity",
+ "wrong": "册",
+ "right": "冊",
+ "contexts": [
+  "註冊",
+  "註冊處"
+ ],
+ "severity": "medium",
+ "occurrences": 1,
+ "evidence": "同上。简体「册」不贯穿竖笔，「冊」贯穿。",
+ "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+ "case_page": "1",
+ "reported_at": "2026-10-27",
+ "reporter": "macm"
+}

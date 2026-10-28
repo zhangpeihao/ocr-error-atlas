@@ -1,0 +1,17 @@
+{
+ "id": "zhhant-charity-0009",
+ "lang": "zh-Hant",
+ "domain": "hkicharity",
+ "wrong": "運",
+ "right": "連",
+ "contexts": [
+  "有關連的情況"
+ ],
+ "severity": "high",
+ "occurrences": 1,
+ "evidence": "原图 p23「與…有關連的情況下」。董事免责条款；關連(connected)为关连交易判定基准。",
+ "case_doc": "香港華夏醫藥學會慈善基金有限公司 章程",
+ "case_page": "23",
+ "reported_at": "2026-10-27",
+ "reporter": "macm"
+}
