@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "version": "2026.10.28.20",
- "updated": "2026-10-28T17:03:19+08:00",
+ "updated": "2026-10-28T09:24:40+00:00",
  "note": "由 scripts/build_atlas.py 从 riskpairs.json + entries/ 生成，请勿手改",
  "riskpairs": [
   {
